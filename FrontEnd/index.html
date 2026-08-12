@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tu CSS compilado de Tailwind -->
+  <link rel="stylesheet" href="./dist/output.css" />
+
+  <title>Simposio Internacional de Vuelo en Paramotor 2026 | Playas de Rosarito</title>
+
+  <!-- Fonts de Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+  <!--Font Awesome & Remix Icon-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body id="root">
+
+    <div class="font-sans antialiased">
+        <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+            <div class="w-full px-4 md:px-8 lg:px-12 py-4">
+                <div class="flex items-center justify-between">
+                    <button class="cursor-pointer flex-shrink-0">
+                        <img alt="Simposio Paramotor 2026" class="h-14 md:h-20 w-auto object-contain" src="images/logo.png">
+                    </button>
+                    <div class="hidden md:flex flex-1 items-center justify-end gap-6 lg:gap-8">
+                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
+                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</button>
+                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</button>
+                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</button>
+                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicación</button>
+                    </div>
+
+                    <button id="mobile-menu-button" type="button" class="md:hidden text-white text-2xl cursor-pointer w-10 h-10 flex items-center justify-center" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+                        <i id="mobile-menu-icon" class="ri-menu-line"></i>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-white/10 pt-4 bg-navy-500">
+                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Inicio</button>
+                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Evento</button>
+                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Experiencias</button>
+                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Programa</button>
+                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Ubicación</button>
+                </div>
+            </div>
+        </nav>
+
+        <section id="hero" class="relative min-h-[65vh] w-full overflow-hidden flex items-center justify-center">
+            <div class="absolute inset-0 w-full h-full">
+                <video autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-navy-500/30 via-navy-500/20 to-navy-500/40"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-navy-500/20 to-transparent"></div>
+            </div>
+            <div class="relative z-10 w-full px-4 md:px-8 lg:px-12 pt-24 md:pt-28 pb-8 md:pb-10">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h1 class="font-heading font-extrabold text-white uppercase leading-[0.9] mb-2 md:mb-3">
+                        <span class="block text-2xl md:text-4xl lg:text-5xl tracking-[0.1em]">Primer Simposio</span>
+                        <span class="block text-2xl md:text-4xl lg:text-5xl tracking-[0.1em]">Internacional</span>
+                    </h1>
+                    <h2 class="mb-3 md:mb-4">
+                        <span class="block font-heading font-bold text-white text-base md:text-xl lg:text-2xl uppercase tracking-[0.15em] mb-1">de Vuelo en</span>
+                        <span class="block font-brush text-4xl md:text-6xl lg:text-7xl text-accent-500">Paramotor</span>
+                    </h2>
+
+                    <div class="flex items-center justify-center gap-3 md:gap-5 mb-3 md:mb-4">
+                        <span class="font-heading font-bold text-white text-xl md:text-3xl lg:text-4xl">13</span>
+                        <span class="text-accent-500 text-lg md:text-2xl">.</span>
+                        <span class="font-heading font-bold text-white text-xl md:text-3xl lg:text-4xl">14</span>
+                        <span class="text-accent-500 text-lg md:text-2xl">.</span>
+                        <span class="font-heading font-bold text-white text-xl md:text-3xl lg:text-4xl">15</span>
+                        <span class="font-heading font-bold text-white/80 text-base md:text-xl lg:text-2xl uppercase tracking-wider ml-1 md:ml-2">Noviembre 2026</span>
+                    </div>
+
+                    <p class="text-accent-500 text-base md:text-sm font-heading font-semibold tracking-[0.3em] uppercase mb-3 md:mb-4">Playas de Rosarito · Baja California · Mexico</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8">
+                        <button class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto">Quiero Asistir</button>
+                        <button class="border-2 border-white/40 hover:border-white text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto hover:bg-white/10">Conocer el Evento</button>
+                    </div>
+
+                    <div class="mt-3 md:mt-4">
+                        <div class="flex items-start justify-center">
+                            <div class="flex items-start">
+                                <div class="flex flex-col items-center px-2 md:px-4 lg:px-6">
+                                    <span id="countdown-days" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tabular-nums">00</span>
+                                    <div class="w-full h-px bg-white/20 mt-2 mb-1"></div>
+                                    <span class="text-[9px] md:text-[10px] lg:text-xs font-medium tracking-[0.25em] text-white/50 uppercase">DÍAS</span>
+                                </div>
+                                <span class="text-white/30 text-xl md:text-2xl pt-2 md:pt-3 px-0.5 md:px-1">.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex flex-col items-center px-2 md:px-4 lg:px-6">
+                                    <span id="countdown-hours" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tabular-nums">00</span>
+                                    <div class="w-full h-px bg-white/20 mt-2 mb-1"></div>
+                                    <span class="text-[9px] md:text-[10px] lg:text-xs font-medium tracking-[0.25em] text-white/50 uppercase">HORAS</span>
+                                </div>
+                                <span class="text-white/30 text-xl md:text-2xl pt-2 md:pt-3 px-0.5 md:px-1">.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex flex-col items-center px-2 md:px-4 lg:px-6">
+                                    <span id="countdown-minutes" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tabular-nums">00</span>
+                                    <div class="w-full h-px bg-white/20 mt-2 mb-1"></div>
+                                    <span class="text-[9px] md:text-[10px] lg:text-xs font-medium tracking-[0.25em] text-white/50 uppercase">MINUTOS</span>
+                                </div>
+                                <span class="text-white/30 text-xl md:text-2xl pt-2 md:pt-3 px-0.5 md:px-1">.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex flex-col items-center px-2 md:px-4 lg:px-6">
+                                    <span id="countdown-seconds" class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-white tabular-nums">00</span>
+                                    <div class="w-full h-px bg-white/20 mt-2 mb-1"></div>
+                                    <span class="text-[9px] md:text-[10px] lg:text-xs font-medium tracking-[0.25em] text-white/50 uppercase">SEGUNDOS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="bg-white py-20 md:py-28 lg:py-36 overflow-hidden">
+            <div class="w-full px-4 md:px-8 lg:px-12 max-w-5xl mx-auto text-center">
+                <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
+                    <p class="text-accent-500 text-lg md:text-lg font-heading font-semibold tracking-[0.3em] uppercase mb-4">Una Experiencia Unica</p>
+                </div>
+                <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 100ms;">
+                    <h2 class="font-heading font-extrabold text-navy-500 text-4xl md:text-5xl lg:text-7xl uppercase tracking-[0.05em] mb-4">El Cielo Nos Une</h2>
+                </div>
+                <div class="transition-all duration-700 opacity-100 translate-y-0" style="transition-delay: 200ms;">
+                    <p class="font-brush text-accent-500 text-2xl md:text-3xl lg:text-4xl mb-8">La aventura nos espera</p>
+                </div>
+                <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 300ms;">
+                    <p class="text-gray-700 text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-10">  Tres días para compartir la pasión por el vuelo, aprender de expertos y conectar con la comunidad frente al Pacífico.</p>
+                </div>
+                <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 400ms;">
+                    <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">
+                        <span class="flex items-center gap-2 md:gap-4">
+                            <span class="font-heading font-bold text-navy-500 text-lg md:text-lg lg:text-lg tracking-[0.2em] uppercase">APRENDE</span>
+                            <span class="text-accent-500 text-sm md:text-base">.</span>
+                        </span>
+                        <span class="flex items-center gap-2 md:gap-4">
+                            <span class="font-heading font-bold text-navy-500 text-lg md:text-lg lg:text-lg tracking-[0.2em] uppercase">CONECTA</span>
+                            <span class="text-accent-500 text-sm md:text-base">.</span>
+                        </span>
+                        <span class="flex items-center gap-2 md:gap-4">
+                            <span class="font-heading font-bold text-navy-500 text-lg md:text-lg lg:text-lg tracking-[0.2em] uppercase">VUELA</span>
+                            <span class="text-accent-500 text-sm md:text-base">.</span>
+                        </span>
+                        <span class="flex items-center gap-2 md:gap-4">
+                            <span class="font-heading font-bold text-navy-500 text-lg md:text-lg lg:text-lg tracking-[0.2em] uppercase">DISFRUTA</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-navy-600 py-12 md:py-16">
+            <div class="w-full px-4 md:px-8 lg:px-12 max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
+                    <div class="flex-shrink-0">
+                        <button class="cursor-pointer">
+                            <img alt="Simposio Paramotor 2026" class="h-16 md:h-20 w-auto object-contain" src="images/logo.png">
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
+                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</button>
+                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</button>
+                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</button>
+                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicacion</button>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mb-8">
+                    <p class="font-heading font-bold text-white/40 text-xs md:text-sm tracking-[0.2em] uppercase">Aprende · Conecta · Vuela · Disfruta</p>
+                </div>
+                <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-white/40 text-xs text-center md:text-left">© 2026 Simposio Internacional de Vuelo en Paramotor. Todos los derechos reservados.</p>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

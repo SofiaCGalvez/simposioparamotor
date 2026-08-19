@@ -40,7 +40,7 @@ const updateNavbarBackground = () => {
 const setMobileMenuState = (isOpen) => {
     mobileMenu.classList.toggle('hidden', !isOpen);
     mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
-    mobileMenuButton.setAttribute('aria-label', isOpen ? 'Cerrar menu' : 'Abrir menu');
+    mobileMenuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
     mobileMenuIcon.className = isOpen ? 'ri-close-line' : 'ri-menu-line';
     updateNavbarBackground();
 };
@@ -49,8 +49,37 @@ mobileMenuButton.addEventListener('click', () => {
     setMobileMenuState(mobileMenu.classList.contains('hidden'));
 });
 
-mobileMenu.querySelectorAll('button').forEach((link) => {
-    link.addEventListener('click', () => setMobileMenuState(false));
+const getScrollTargetTop = (target) => {
+    const navHeight = siteNav.offsetHeight;
+    const targetTop = target.getBoundingClientRect().top + window.scrollY;
+
+    return Math.max(targetTop - navHeight - 12, 0);
+};
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        const targetId = link.getAttribute('href');
+        const target = document.querySelector(targetId);
+
+        if (!target) {
+            return;
+        }
+
+        event.preventDefault();
+
+        if (!mobileMenu.classList.contains('hidden')) {
+            setMobileMenuState(false);
+        }
+
+        window.requestAnimationFrame(() => {
+            window.scrollTo({
+                top: getScrollTargetTop(target),
+                behavior: 'smooth',
+            });
+
+            window.history.pushState(null, '', targetId);
+        });
+    });
 });
 
 updateNavbarBackground();

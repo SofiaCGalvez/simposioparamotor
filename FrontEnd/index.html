@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,30 +25,30 @@
 <body id="root">
 
     <div class="font-sans antialiased">
-        <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+        <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 bg-transparent">
             <div class="w-full px-4 md:px-8 lg:px-12 py-4">
                 <div class="flex items-center justify-between">
-                    <button class="cursor-pointer flex-shrink-0">
+                    <a href="#hero" class="cursor-pointer flex-shrink-0" aria-label="Ir al inicio">
                         <img alt="Simposio Paramotor 2026" class="h-14 md:h-20 w-auto object-contain" src="images/logo.png">
-                    </button>
+                    </a>
                     <div class="hidden md:flex flex-1 items-center justify-end gap-6 lg:gap-8">
-                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
-                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</button>
-                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</button>
-                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</button>
-                        <button class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicación</button>
+                        <a href="#hero" class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</a>
+                        <a href="#intro" class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</a>
+                        <a href="#experiencias" class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</a>
+                        <a href="#programa" class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</a>
+                        <a href="#ubicacion" class="text-sm font-medium text-white/80 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicación</a>
                     </div>
 
-                    <button id="mobile-menu-button" type="button" class="md:hidden text-white text-2xl cursor-pointer w-10 h-10 flex items-center justify-center" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+                    <button id="mobile-menu-button" type="button" class="md:hidden text-white text-2xl cursor-pointer w-10 h-10 flex items-center justify-center" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
                         <i id="mobile-menu-icon" class="ri-menu-line"></i>
                     </button>
                 </div>
                 <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-white/10 pt-4 bg-navy-500">
-                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Inicio</button>
-                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Evento</button>
-                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Experiencias</button>
-                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Programa</button>
-                    <button class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Ubicación</button>
+                    <a href="#hero" class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Inicio</a>
+                    <a href="#intro" class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Evento</a>
+                    <a href="#experiencias" class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Experiencias</a>
+                    <a href="#programa" class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Programa</a>
+                    <a href="#ubicacion" class="block w-full text-left py-3 text-white/80 hover:text-accent-500 transition-colors cursor-pointer">Ubicación</a>
                 </div>
             </div>
         </nav>
@@ -81,10 +81,10 @@
                         <span class="font-heading font-bold text-white/80 text-base md:text-xl lg:text-2xl uppercase tracking-wider ml-1 md:ml-2">Noviembre 2026</span>
                     </div>
 
-                    <p class="text-accent-500 text-lg md:text-lg font-heading font-semibold tracking-[0.3em] uppercase mb-3 md:mb-4">Playas de Rosarito · Baja California · Mexico</p>
+                    <p class="text-accent-500 text-lg md:text-lg font-heading font-semibold tracking-[0.3em] uppercase mb-3 md:mb-4">Playas de Rosarito · Baja California · México</p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8">
-                        <button class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto">Quiero Asistir</button>
-                        <button class="border-2 border-white/40 hover:border-white text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto hover:bg-white/10">Conocer el Evento</button>
+                        <a href="https://wa.me/526641234567?text=Hola%2C%20me%20interesa%20asistir%20al%20Simposio%20Internacional%20de%20Vuelo%20en%20Paramotor%202026%20en%20Playas%20de%20Rosarito.%20%C2%BFMe%20pueden%20compartir%20informaci%C3%B3n%20sobre%20registro%2C%20costos%20y%20programa%3F" target="_blank" rel="noopener noreferrer" class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto">Quiero Asistir</a>
+                        <a href="#intro" class="border-2 border-white/40 hover:border-white text-white px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap w-full sm:w-auto hover:bg-white/10">Conocer el Evento</a>
                     </div>
 
                     <div class="mt-3 md:mt-4">
@@ -129,7 +129,7 @@
         <section id="intro" class="bg-white py-20 md:py-28 lg:py-36 overflow-hidden">
             <div class="w-full px-4 md:px-8 lg:px-12 max-w-5xl mx-auto text-center">
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
-                    <p class="text-accent-500 text-lg md:text-lg font-heading font-semibold tracking-[0.3em] uppercase mb-4">Una Experiencia Unica</p>
+                    <p class="text-accent-500 text-lg md:text-lg font-heading font-semibold tracking-[0.3em] uppercase mb-4">Una Experiencia Única</p>
                 </div>
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 100ms;">
                     <h2 class="font-heading font-extrabold text-navy-500 text-4xl md:text-5xl lg:text-7xl uppercase tracking-[0.05em] mb-4">El Cielo Nos Une</h2>
@@ -165,7 +165,7 @@
         <section id="experiencias" class="bg-warm-50 py-20 md:py-28 lg:py-36">
             <div class="w-full px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
-                    <h2 class="font-heading font-extrabold text-navy-500 text-3xl md:text-4xl lg:text-5xl uppercase tracking-[0.05em] text-center mb-4">Todo lo que podras vivir</h2>
+                    <h2 class="font-heading font-extrabold text-navy-500 text-3xl md:text-4xl lg:text-5xl uppercase tracking-[0.05em] text-center mb-4">Todo lo que podrás vivir</h2>
                     <div class="w-16 h-0.5 bg-accent-500 mx-auto mb-12 md:mb-16"></div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -198,7 +198,7 @@
                                 <div class="w-10 h-10 flex items-center justify-center mb-3">
                                     <i class="ri-flight-takeoff-line text-xl text-accent-500 group-hover:scale-110 transition-transform duration-300"></i>
                                 </div>
-                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Vuelos de exhibicion</h3>
+                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Vuelos de exhibición</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">Exhibiciones y vuelos recreativos.</p>
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                                     <i class="ri-store-2-line text-xl text-accent-500 group-hover:scale-110 transition-transform duration-300"></i>
                                 </div>
                                 <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Expo comercial</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">Equipos, accesorios y tecnologia.</p>
+                                <p class="text-gray-600 text-sm leading-relaxed">Equipos, accesorios y tecnología.</p>
                             </div>
                         </div>
                     </div>
@@ -238,36 +238,36 @@
                         </div>
                     </div>
 
-                    <!---Fotografia-->
+                    <!---Fotografía-->
                     <div class="h-full transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
                         <div class="group h-full flex flex-col bg-white border border-warm-100 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1 cursor-default overflow-hidden">
                             <div class="relative w-full h-44 md:h-48 overflow-hidden">
-                                <img alt="Fotografia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="images/fotografia.jpg">
+                                <img alt="Fotografía" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="images/fotografia.jpg">
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-500/40 to-transparent"></div>
                             </div>
                             <div class="flex-1 p-5 md:p-6">
                                 <div class="w-10 h-10 flex items-center justify-center mb-3">
                                     <i class="ri-camera-line text-xl text-accent-500 group-hover:scale-110 transition-transform duration-300"></i>
                                 </div>
-                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Fotografia y video</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">Captura momentos unicos desde el aire.</p>
+                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Fotografía y video</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Captura momentos únicos desde el aire.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!---Gastronomia-->
+                    <!---Gastronomía-->
                     <div class="h-full transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
                         <div class="group h-full flex flex-col bg-white border border-warm-100 hover:border-accent-500/30 transition-all duration-300 hover:-translate-y-1 cursor-default overflow-hidden">
                             <div class="relative w-full h-44 md:h-48 overflow-hidden">
-                                <img alt="Gastronomia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="images/gastronomia.jpg">
+                                <img alt="Gastronomía" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" src="images/gastronomia.jpg">
                                 <div class="absolute inset-0 bg-gradient-to-t from-navy-500/40 to-transparent"></div>
                             </div>
                             <div class="flex-1 p-5 md:p-6">
                                 <div class="w-10 h-10 flex items-center justify-center mb-3">
                                     <i class="ri-restaurant-line text-xl text-accent-500 group-hover:scale-110 transition-transform duration-300"></i>
                                 </div>
-                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Gastronomia</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">Disfruta de la oferta gastronomica de Baja California.</p>
+                                <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Gastronomía</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Disfruta de la oferta gastronómica de Baja California.</p>
                             </div>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                                     <i class="ri-music-2-line text-xl text-accent-500 group-hover:scale-110 transition-transform duration-300"></i>
                                 </div>
                                 <h3 class="font-heading font-bold text-navy-500 text-base md:text-lg uppercase tracking-wide mb-2">Ambiente familiar</h3>
-                                <p class="text-gray-600 text-sm leading-relaxed">Musica, actividades y convivencia junto al mar.</p>
+                                <p class="text-gray-600 text-sm leading-relaxed">Música, actividades y convivencia junto al mar.</p>
                             </div>
                         </div>
                     </div>
@@ -310,7 +310,37 @@
             </div>
         </section>
 
-        <section id="ubicacion" class="relative overflow-hidden">
+        <section id="rosarito" class="relative overflow-hidden mb-12 mb-16 md:mb-20">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-3/5 relative min-h-[280px] md:min-h-[340px] lg:min-h-[420px]">
+                    <img alt="Paramotor en vuelo" class="w-full h-full object-cover absolute inset-0" src="images/paramotor.jpg">
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white/90 lg:to-white/80 hidden lg:block"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent lg:hidden"></div>
+                </div>
+                <div class="lg:w-2/5 bg-white lg:bg-transparent relative z-10 px-4 md:px-8 lg:px-12 py-8 md:py-10 lg:py-14 lg:-ml-20 flex flex-col justify-center">
+                    <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 0ms;">
+                        <p class="text-accent-500 text-xs md:text-sm font-heading font-semibold tracking-[0.3em] uppercase mb-3">UNA AVENTURA PARA COMPARTIR</p>
+                    </div>
+                    <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 100ms;">
+                        <h2 class="font-heading font-extrabold text-navy-500 text-2xl md:text-3xl lg:text-4xl uppercase tracking-[0.05em] mb-4 leading-tight">
+                            VEN CON TU FAMILIA
+                            <br>
+                            <span class="text-accent-500">Y AMIGOS</span>
+                        </h2>
+                    </div>
+                    <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 200ms;">
+                        <p class="text-foreground-700 text-sm md:text-base leading-relaxed mb-6 max-w-md">El Simposio también es una oportunidad para compartir un fin de semana diferente en Playas de Rosarito. Vive de cerca la emoción del vuelo y disfruta de un ambiente pensado para compartir con quienes más quieres.</p>
+                    </div>
+                    <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 300ms;">
+                        <div class="border-l-2 border-accent-500 pl-4">
+                            <p class="font-heading font-bold text-navy-500 text-sm md:text-base leading-relaxed">Diversión para todas las edades en un ambiente seguro y accesible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative overflow-hidden">
             <div class="w-full px-4 md:px-8 lg:px-12 py-6 md:py-10 bg-white">
                 <div class="hidden md:flex gap-3 lg:gap-4 h-[480px] lg:h-[560px] max-w-7xl mx-auto">
                     <div class="flex-1 rounded-lg overflow-hidden cursor-pointer group relative">
@@ -374,6 +404,9 @@
                 </div>
             </div>
 
+        </div>
+
+        <section id="ubicacion" class="relative overflow-hidden">
             <div class="bg-white px-4 md:px-8 lg:px-12 py-12 md:py-16 lg:py-20 flex flex-col items-center text-center">
                 <div class="transition-all duration-700 opacity-100 translate-y-0" style="transition-delay: 0ms;">
                     <p class="text-accent-500 text-xs md:text-sm font-heading font-semibold tracking-[0.3em] uppercase mb-4">Nos vemos en</p>
@@ -382,11 +415,11 @@
                     <h2 class="font-heading font-extrabold text-navy-500 text-4xl md:text-5xl lg:text-7xl uppercase tracking-[0.05em] mb-2 leading-[0.95]">Playas de Rosarito</h2>
                 </div>
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 200ms;">
-                    <p class="font-heading font-bold text-navy-500/60 text-sm md:text-base uppercase tracking-[0.2em] mb-8">Baja California · Mexico</p>
+                    <p class="font-heading font-bold text-navy-500/60 text-sm md:text-base uppercase tracking-[0.2em] mb-8">Baja California · México</p>
                 </div>
 
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 300ms;">
-                    <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-12 max-w-2xl">Un destino emblematico frente al oceano Pacifico, perfecto para vivir la emocion del vuelo en paramotor y disfrutar de la comunidad aeronautica internacional.</p>
+                    <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-16 md:mb-20 max-w-2xl">Un destino emblemático frente al océano Pacífico, perfecto para vivir la emoción del vuelo en paramotor y disfrutar de la comunidad aeronáutica internacional.</p>
                 </div>
 
                 <div class="transition-all duration-700 opacity-100 translate-y-0 " style="transition-delay: 400ms;">
@@ -400,7 +433,7 @@
                         </div>
                         <div class="relative h-[280px] sm:h-[320px] md:h-[380px] lg:h-[440px] rounded-lg overflow-hidden border border-background-200/70 bg-background-100">
                             <img alt="Mapa" class="absolute inset-0 w-full h-full object-cover object-center" src="">
-                            <iframe title="Mapa ubicacion" src="https://www.google.com/maps?q=Rosarito%20Beach%20Hotel%2C%20Playas%20de%20Rosarito%2C%20Baja%20California&z=15&output=embed" class="absolute inset-0 w-full h-full z-10" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                            <iframe title="Mapa ubicación" src="https://www.google.com/maps?q=Rosarito%20Beach%20Hotel%2C%20Playas%20de%20Rosarito%2C%20Baja%20California&z=15&output=embed" class="absolute inset-0 w-full h-full z-10" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                             <a href="https://www.google.com/maps/place/Rosarito+Beach+Hotel/@32.3361635,-117.0545407,17z/data=!3m1!4b1!4m9!3m8!1s0x14fae26a31f3fecd:0x429fb117d4ce4c02!5m2!4m1!1i2!8m2!3d32.3361635!4d-117.0545407!16s%2Fg%2F1tdcxcnf?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="absolute inset-0 z-20 bg-navy-500/20 hover:bg-navy-500/10 transition-colors duration-300 flex items-end justify-center pb-6 cursor-pointer">
                                 <span class="inline-flex items-center gap-2 bg-white text-navy-500 text-sm font-heading font-bold tracking-wider uppercase px-4 py-2 rounded-full hover:bg-white/90 transition-colors">
                                     <i class="ri-map-pin-2-line"></i>
@@ -420,21 +453,21 @@
                                     <i class="ri-map-pin-2-line"></i>
                                 </span>
                                 <p class="text-foreground-700 text-sm md:text-base leading-relaxed text-left">
-                                    Blvd. Benito Juarez 31, Centro,
+                                    Blvd. Benito Juárez 31, Centro,
                                     <br>
-                                    22710 Playas de Rosarito, B.C., Mexico
+                                    22710 Playas de Rosarito, B.C., México
                                 </p>
                             </div>
                             <div class="flex items-start gap-3">
                                 <span class="w-5 h-5 flex items-center justify-center text-accent-500 mt-0.5">
                                     <i class="ri-compass-3-line"></i>
                                 </span>
-                                <p class="text-foreground-700 text-sm md:text-base leading-relaxed text-left">Frente al mar, a solo minutos del muelle y la zona turistica.</p>
+                                <p class="text-foreground-700 text-sm md:text-base leading-relaxed text-left">Frente al mar, a solo minutos del muelle y la zona turística.</p>
                             </div>
                         </div>
                         <a href="https://www.google.com/maps/place/Rosarito+Beach+Hotel/@32.3361635,-117.0545407,17z/data=!3m1!4b1!4m9!3m8!1s0x14fae26a31f3fecd:0x429fb117d4ce4c02!5m2!4m1!1i2!8m2!3d32.3361635!4d-117.0545407!16s%2Fg%2F1tdcxcnf?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-navy-500 text-white hover:bg-navy-600 px-6 py-3 text-sm font-heading font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer whitespace-nowrap">
                             <i class="ri-navigation-line"></i>
-                            Como Llegar
+                            Cómo Llegar
                         </a>
                     </div>
                 </div>
@@ -445,16 +478,16 @@
             <div class="w-full px-4 md:px-8 lg:px-12 max-w-6xl mx-auto">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
                     <div class="flex-shrink-0">
-                        <button class="cursor-pointer">
+                        <a href="#hero" class="cursor-pointer" aria-label="Ir al inicio">
                             <img alt="Simposio Paramotor 2026" class="h-16 md:h-20 w-auto object-contain" src="images/logo.png">
-                        </button>
+                        </a>
                     </div>
                     <div class="flex flex-wrap items-center justify-center gap-4 md:gap-6">
-                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</button>
-                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</button>
-                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</button>
-                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</button>
-                        <button class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicacion</button>
+                        <a href="#hero" class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Inicio</a>
+                        <a href="#intro" class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Evento</a>
+                        <a href="#experiencias" class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Experiencias</a>
+                        <a href="#programa" class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Programa</a>
+                        <a href="#ubicacion" class="text-sm text-white/60 hover:text-accent-500 transition-colors cursor-pointer whitespace-nowrap">Ubicación</a>
                     </div>
                     <div class="flex items-center gap-4">
                         <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
@@ -463,7 +496,7 @@
                         <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
                             <i class="ri-instagram-fill"></i>
                         </a>
-                        <a href="" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
+                        <a href="https://wa.me/526641234567?text=Hola%2C%20vi%20la%20p%C3%A1gina%20del%20Simposio%20Internacional%20de%20Vuelo%20en%20Paramotor%202026%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="w-10 h-10 flex items-center justify-center border border-white/20 hover:border-accent-500 hover:text-accent-500 text-white/60 transition-all">
                             <i class="ri-whatsapp-fill"></i>
                         </a>
                     </div>
